@@ -1,2 +1,3 @@
 # leabhar
-Blogging platform
+
+Leabhar is a blogging platform written in Python.

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>
+    Crap Nullpointer Exceptions | This is the blog of John Dulaney, a hacker of Fedora, SCAdian, player of Music, blacksmith, sailor, and consumer of Bacon.
+  </title>
+  <meta name="description" content="This is the blog of John Dulaney, a hacker of Fedora, SCAdian, player of Music, blacksmith, sailor, and consumer of Bacon.">
+  <meta name="author" content="John Dulaney">
+  <link href="static/css/reset.css" rel="stylesheet" />
+  <link href="static/css/styles.css" rel="stylesheet" />
+</head>
+<body class="page">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><a href="#">Things</a></li>
+    </ul>
+  </nav>
+  <header class="boilerplate">
+    <hgroup>
+      <h1>Crap Nullpointer Exceptions</h1>
+      <h2>This is the blog of John Dulaney, a hacker of Fedora, SCAdian, player of Music, blacksmith, sailor, and consumer of Bacon.</h2>
+    </hgroup>
+  </header>
+  <main>
+    <article>
+      <header>
+        <h1>Batch convert .jp2 files to png from the command line with GIMP</h1>
+      </header>
+      <section>
+        <p>
+          I have a bunch of Sanborn maps in JPEG 2000 (.jp2) format that are quite large.  The problem is that the the proprietary CAD software I use does not support this particular file format.  Therefore, I need to convert to something it does support; I chose png.  To convert all the files in a directory at once, I cd into that directory and run this:
+        </p>
+
+        <div class="code"><pre><code> <!-- you'll be able to do proper tabulation! -->jdulaney@gefjon:~/$ gimp -n -i -b – &lt;
+&lt;
+EOF
+(let* ( (file’s (cadr (file-glob “*.jp2” 1))) (filename “”) (image 0) (layer 0) )
+    (while (pair? file’s)
+    (set! image (car (gimp-file-load RUN-NONINTERACTIVE (car file’s) (car file’s))))
+    (set! layer (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE)))
+(set! filename (string-append (substring (car file’s) 0 (- (string-length (car file’s)) 4)) “.png”))
+(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)
+(gimp-image-delete image)
+(set! file’s (cdr file’s))
+)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)
+(gimp-image-delete image)
+(set! file’s (cdr file’s))
+)
+(gimp-qui(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)
+(gimp-image-delete image)
+(set! file’s (cdr file’s))
+)
+(gimp-qui(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)
+(gimp-image-delete image)
+(set! file’s (cdr file’s))
+)
+(gimp-qui
+(gimp-quit 0)
+)
+EOF</code></pre></div>
+      
+      <figure>
+        <img src="content/images/small.jpg">
+        <figcaption>Hobbies</figcaption>
+      </figure>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      </p>
+      <figure>
+        <img src="content/images/large.jpg">
+        <figcaption>From my visit at the volcano</figcaption>
+      </figure>
+
+      </section>
+      <div class="tags">
+        <a href="">Fedora</a>
+        <a href="">GIMP</a>
+        <a href="">Image Conversion</a>
+      </div>
+    </article>
+    <article>
+      <header>
+        <h1>Article #2</h1>
+      </header>
+      <section>
+        This is the second article.
+      </section>
+    </article>
+  </main>
+  <footer>This is the Footer</footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+@font-face {
+	font-family: 'CMU Serif';
+	src: url('CMUSerif-BoldItalic.eot');
+	src: url('CMUSerif-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('CMUSerif-BoldItalic.woff') format('woff'),
+		url('CMUSerif-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'CMU Serif';
+	src: url('CMUSerif-Italic.eot');
+	src: url('CMUSerif-Italic.eot?#iefix') format('embedded-opentype'),
+		url('CMUSerif-Italic.woff') format('woff'),
+		url('CMUSerif-Italic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'CMU Serif';
+	src: url('CMUSerif-Bold.eot');
+	src: url('CMUSerif-Bold.eot?#iefix') format('embedded-opentype'),
+		url('CMUSerif-Bold.woff') format('woff'),
+		url('CMUSerif-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CMU Serif';
+	src: url('CMUSerif-Roman.eot');
+	src: url('CMUSerif-Roman.eot?#iefix') format('embedded-opentype'),
+		url('CMUSerif-Roman.woff') format('woff'),
+		url('CMUSerif-Roman.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
